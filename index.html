@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sp0tify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utility.css">
+    <link rel="shortcut icon" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png" type="image/x-icon">
+
+</head>
+
+<body class="body">
+    <div class="container flex ">
+        <div class="left">
+            <div class="home bg_grey bradius m1">
+                <div class="logo flex align_items ">
+                    <img class="logo_img" src="utils/logo/spotify_logo.svg" alt="">
+                    <div class="closing_hamburger align_items justify_content">
+                        <img class="closing_hamburger_img" src="/utils/logo/closing_hamburger.svg" alt="">
+                    </div>
+                </div>
+                <ul class="flex column">
+                    <li class="flex align_items"><img src="utils/logo/home.svg" alt="">
+                        <span>Home</span>
+                    </li>
+                    <li class="flex align_items"><img src="utils/logo/search.svg" alt="">
+                        <span>Search</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="left_lower bg_grey  bradius m1 ">
+                <header class="header left_lower_header flex">
+                    <div class="library flex align_items">
+                        <ul class="flex ">
+                            <li class="flex align_items"><img src="utils/logo/library.svg" alt=""><span>Your
+                                    Library</span>
+                            </li>
+                            <span class="flex align_items library_plus"><img src="utils/logo/library_plus.svg" alt="">
+                            </span>
+                        </ul>
+                    </div>
+                </header>
+                <!-- <div class="playlist_list flex column align_items">
+                        <div class="playlist bradius">
+                            <div class="create_playlist flex column ">
+                                <div class="create_playlist_text flex column">
+                                    <span class="big">
+                                        Create your first playlist
+                                    </span>
+                                    <span class="small">
+                                        It’s easy, we’ll help you
+                                    </span>
+                                </div>
+                                <button class="btn">Create playlist</button>
+                            </div>
+                        </div>
+                        <div class="playlist bradius">
+                            <div class="create_playlist flex column ">
+                                <div class="create_playlist_text flex column">
+                                    <span class="big">
+                                        Create your first playlist
+                                    </span>
+                                    <span class="small">
+                                        It’s easy, we’ll help you
+                                    </span>
+                                </div>
+                                <button class="btn">Create playlist</button>
+                            </div>
+                        </div>
+                    </div> -->
+                <div class="your_songs_container">
+                    <ul class="your_songs_list flex column  justify_content">
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div class="Cookies">
+                        <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div class="global_language flex align_items">
+                        <button class="flex align_items justify_content">
+                            <span>
+                                <img src="utils/logo/global_language.svg" alt="">
+                            </span>
+                            English
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- -----------------------------------------------RIGHTSIDE--------------------------------------------------- -->
+
+
+
+
+
+
+        <div class="right bg_grey bradius flex column align_items">
+            <div class="nav flex align_items">
+                <div class="nav_arrow flex align_items justify_content">
+                    <div class="hamburger">
+                        <img src="/utils/logo/hamburger.svg" alt="">
+                    </div>
+                    <button class="nav_btn"><img src="/utils/logo/chevronleft.svg" alt=""></button>
+                    <button class="nav_btn"><img src="/utils/logo/chevronright.svg" alt=""></button>
+                </div>
+                <div class="button flex align_items justify_content">
+                    <button class="signup_btn">
+                        <span>Sign up</span>
+                    </button>
+                    <button class="btn login_btn">
+                        <span class="login_btn_txt flex align_items justify_content">Log in</span>
+                    </button>
+                </div>
+            </div>
+            <div class="spotify_playlists flex column">
+                <div class="right_lower_container">
+                    <div class="right_lower_container_header flex align_items">
+                        <h1>Spotify Playlists</h1>
+                        <p>Show all</p>
+                    </div>
+                    <div class="right_lower_card_container">
+                        <div class="all_card_container">
+
+                        </div>
+                    </div>
+                    <!-- <div class="right_lower_container_header flex align_items">
+                            <h1>Sleep</h1>
+                        </div>
+                        <div class="all_card_container">
+                            <div class="card_container flex column  align_items justify_content bradius">
+                                <div class="card flex column align_items justify_content">
+                                    <div class="play_button_container">
+                                        <button class="play_button">
+                                            <span class="flex align_items justify_content"><img
+                                                    src="/utils/logo/playbutton.svg" alt=""></span>
+                                        </button>
+                                    </div>
+                                    <img class="bradius"
+                                        src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06" alt="">
+                                    <h2>Dinner with Friends</h2>
+                                    <p>The perfect soundtrack to those long nights over dinner</p>
+                                </div>
+                            </div>
+                            <div class="card_container flex column  align_items justify_content bradius">
+                                <div class="card flex column align_items justify_content">
+                                    <div class="play_button_container flex align_items justify_content">
+                                        <button class="play_button">
+                                            <span class="flex align_items justify_content"><img
+                                                    src="/utils/logo/playbutton.svg" alt=""></span>
+                                        </button>
+                                    </div>
+                                    <img class="bradius"
+                                        src="https://i.scdn.co/image/ab67706f00000002d2291e0c5d43a1b21a941031" alt="">
+                                    <h2>Dinner with Friends</h2>
+                                    <p>The perfect soundtrack to those long nights over dinner</p>
+                                </div>
+                            </div>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="playbar invert flex column align_items">
+        <div class="seekbar">
+            <div class="circle_ticker">
+
+            </div>
+        </div>
+        <div class=" aboveseekbar flex align_items justify_content_spacebetween">
+            <div class="songinfo invert flex align_items ">
+
+            </div>
+            <div class="controles">
+                <div class="song_buttons_container flex cloumn align_items justify_content">
+                    <button id="previous" class="prev_button_playbar song_buttons flex align_items justify_content">
+                        <span><img src="/utils/logo/pevious.svg" alt=""></span>
+                    </button>
+                    <button id="play" class="play_button_playbar song_buttons flex align_items justify_content">
+                        <span><img src="/utils/logo/playsong.svg" alt=""></span>
+                    </button>
+                    <button id="next" class="next_button_playbar song_buttons flex align_items justify_content">
+                        <span><img src="/utils/logo/next.svg" alt=""></span>
+                    </button>
+                </div>
+            </div>
+            <div class="songduration flex align_items">
+
+            </div>
+            <div class="volume flex align_items justify_content">
+                <img class="volume_img invert" src="/utils/logo/volume.svg" alt="">
+                <div class="volume_slider">
+                    <input type="range" id="volume" name="volume">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
