@@ -1,0 +1,44 @@
+.flex {
+    display: flex;
+}
+.invert{
+    filter: invert(100%);
+}
+.border{
+    border: 2px solid red;
+    margin-right:5px ; 
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.justify_content{
+    justify-content: center;
+}
+.justify_content_spacebetween{
+    justify-content: space-between;
+}
+
+.align_items{
+    align-items: center;
+}
+
+.bg_grey{
+    background-color: #121212;
+}
+
+.bradius{
+    border-radius: 8px;
+}
+
+.m1{
+    margin: 8px;
+}
+.m2{
+    margin: 10px;
+}
