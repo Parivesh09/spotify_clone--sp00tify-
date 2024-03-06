@@ -19,6 +19,7 @@ function secondsToMinutesSeconds(seconds) {
 async function getsongs(folder) {
     currentfolder = folder
     let a = await fetch(`/${folder}/`)
+    // console.log(a)
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -73,20 +74,20 @@ const playmusic = (track, pause = false) => {
 
 
 async function DisplayAlbumsAndSongs() {
-    let a = await fetch(`/songs/`)
+    let a = await fetch(`/songs/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
-    let all_a = div.getElementsByTagName("a")
+    let all_a = div.getElementsByTagName("a");
     let cardContainer = document.querySelector(".all_card_container");
-    let array_of_as = Array.from(all_a)
+    let array_of_as = Array.from(all_a);
     for (let index = 0; index < array_of_as.length; index++) {
         const e = array_of_as[index];
 
-
-        if (e.href.includes("/songs") && !e.href.includes(".htaccess")) {
-            let folder_name = e.href.split("/").slice(-2)[0];
-            let a = await fetch(`/songs/${folder_name}/info.json`)
+        if (e.href && e.href.includes("/songs/")) {
+            let folder_name = e.href.split("/songs/")[1].split("/")[0];
+            console.log("Folder Name:", folder_name);
+            let a = await fetch(`songs/${folder_name}/info.json`)
             let response = await a.json();
             // console.log(response.title, response.description);
             cardContainer.innerHTML += `
@@ -104,8 +105,7 @@ async function DisplayAlbumsAndSongs() {
             <h2>${response.title}</h2>
             <p>${response.description}</p>
         </div>
-            </div>`
-
+            </div>`;
         }
     }
 
